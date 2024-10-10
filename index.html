@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-        <title>TODO List</title>
+    <title>TODO List</title>
     <style>
-        .hide{
+        .hide {
             display: none;
         }
     </style>
 </head>
 <body>
-    <h1>TODO LIST</h1>
-    <input id="input" type="text" placeholder="Enter your Task">
-    <button id="add-btn" onclick="addItem()">Add</button>
-    <button id="update-btn" class="hide" onclick="updateItem()">Update</button>
-    <button id="deleteAll-btn" onclick="deleteAllItem()">Delete All</button>
-
-    <ul id="list">
-
-    </ul>
+    <div class="todo-container">
+        <h1>My Tasks</h1>
+        <div class="input-group">
+            <input id="input" type="text" placeholder="Enter a task">
+            <div class="action-buttons">
+                <button id="add-btn" onclick="addItem()">Add Task</button>
+                <button id="update-btn" class="hide" onclick="updateItem()">Update Task</button>
+                <button id="deleteAll-btn" onclick="deleteAllItem()">Clear All</button>
+            </div>
+        </div>
+        <ul id="list"></ul>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
